@@ -7,11 +7,11 @@ export default function HeroSection() {
             <>
                   <header className="relative flex flex-col h-screen gap-4 max-w-screen hero-style justify-evenly">
                         <Navbar />
-                        <hr className="static ml-[48.5rem] rotate-90 w-[117.5rem] hidden lg:flex" />
+                        <hr className="static ml-[48.5rem] rotate-90 w-[117.5rem] hidden xl:flex" />
                         <div className="absolute hidden lg:flex w-5 h-5 justify-center rounded-full bg-white right-[18.85rem] -mt-[40rem]">
                               <img src={Dot } className="relative m-auto scale-110 size-8" />
                         </div>
-                        <hr className="static ml-[32.5rem] rotate-90 opacity-70 w-[110rem] hidden lg:flex" />
+                        <hr className="static ml-[32.5rem] rotate-90 opacity-70 w-[110rem] hidden xl:flex" />
                         <div className="absolute lg:flex w-5 h-5 justify-center rounded-full hidden bg-white right-[38.75rem] mt-40">
                               <img src={Dot } className="relative m-auto scale-110 size-8" />
                         </div>
@@ -20,7 +20,7 @@ export default function HeroSection() {
                               <img src={Dot } className="relative m-auto scale-110 size-8" />
                         </div>
                         <div className="z-10 flex flex-col gap-8 mx-auto mt-8 mb-10 text-center md:w-11/12 lg:w-3/4 xl:w-3/5">
-                              <h1 className="text-7xl md:text-[5rem] font-semibold text-white tracking-wide md:leading-[6.25rem] shadow-text">International Payments for Students.</h1>
+                              <h1 className="text-[2rem] md:text-[4.5rem] font-semibold text-white tracking-wide md:leading-[6.25rem] shadow-text">International Payments for Students.</h1>
                               <div className=" w-4/5 mx-auto text-lg lg:text-2xl font-semibold tracking-normal leading-[2rem] text-white">
                                     <p>The fastest, simplest way to pay tuition, fees, and more — anytime, anywhere, to schools, businesses, and government agencies worldwide!</p>
                               </div>

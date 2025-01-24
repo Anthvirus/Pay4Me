@@ -12,7 +12,7 @@ export default function Navbar() {
                               </dl>
                         </div>
                         <div>
-                              <img src={Logo} alt="Pay4Me Logo" className="-ml-20 lg:w-72"/>
+                              <img src={Logo} alt="Pay4Me Logo" className="w-40 lg:w-72"/>
                         </div>
                         <div>
                               <button className="p-2 bg-white text-[1rem] rounded-md shadow-sm shadow-gray-500 text-[#0A5D2A] font-semibold h-[3.25rem] w-[9rem] hover:scale-95">Download App</button>

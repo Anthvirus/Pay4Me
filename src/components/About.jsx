@@ -23,13 +23,13 @@ const aboutUs = [
 export default function AboutSection() {
       return (
             <>
-                  <section className="relative flex flex-col items-center justify-center w-full gap-8 mt-80 sm:mt-64 md:mt-80">
+                  <section className="relative flex flex-col items-center justify-center w-full gap-8 mt-96 sm:mt-64 md:mt-96 xl:mt-96">
                         <div className="flex lg:mb-12 lg:mt-28">
-                              <img src={AppStoreIcon}  className="w-56 h-auto -mx-2 cursor-pointer md:w-64 md:-mx-0 sm:scale-100 hover:scale-95"/>
-                              <img src={PlayStoreIcon} className="w-56 h-auto -mx-2 cursor-pointer md:w-64 sm:scale-100 md:-mx-0 hover:scale-95"/>
+                              <img src={AppStoreIcon}  className="w-48 h-auto -mx-2 cursor-pointer sm:w-56 md:w-64 md:-mx-0 sm:scale-100 hover:scale-95"/>
+                              <img src={PlayStoreIcon} className="w-48 h-auto -mx-2 cursor-pointer sm:w-56 md:w-64 sm:scale-100 md:-mx-0 hover:scale-95"/>
                         </div>
                         <div>
-                              <h1 className="text-6xl font-bold md:text-7xl">About Us</h1>
+                              <h1 className="text-5xl font-bold md:text-7xl">About Us</h1>
                         </div>
                         <div className="flex flex-col items-center mx-8 mt-8">
                               {aboutUs.map((AboutItem) => (
