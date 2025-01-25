@@ -98,15 +98,15 @@ export default function PartnerSection() {
             <>
                   <section className="flex flex-col items-center justify-center gap-16 mt-24 md:mt-48 partner-style">
                         <div className="flex flex-col items-center">
-                        <h1 className="text-5xl font-bold md:text-7xl">Trusted Partners</h1>
+                        <h1 className="text-4xl font-bold md:text-7xl">Trusted Partners</h1>
                         <div className="flex flex-wrap justify-center gap-6 mx-auto my-12">
                               {Partners.map((partners)=>(
-                              <img className="h-auto max-w-64" alt="" src={partners.image} key={partners.name}/>
+                              <img className="h-auto w-28 md:w-56" alt="" src={partners.image} key={partners.name}/>
                               ))}
                         </div>
                         </div>
                         <div className="flex flex-col items-center">
-                              <h1 className="text-6xl font-bold md:text-7xl">Testmonials</h1>
+                              <h1 className="text-5xl font-bold md:text-7xl">Testmonials</h1>
                               <p className="w-11/12 my-8 text-xl text-center lg:w-1/4">What Our Users Are Saying About Seamless Payments</p>
                               <div className="grid w-11/12 grid-cols-1 gap-4 md:grid-cols-2 lg:w-3/4">
                                     {Testmonies.map((Testmony) => (
@@ -125,7 +125,7 @@ export default function PartnerSection() {
                               </div>
                         </div>
                         <div className="flex flex-col items-center w-11/12 gap-12 mt-24 md:w-2/3 lg:w-1/2">
-                              <h1 className="text-6xl font-bold md:text-7xl">FAQ&rsquo;s</h1>
+                              <h1 className="text-4xl font-bold md:text-7xl">FAQ&rsquo;s</h1>
                               <div className="grid grid-cols-1 gap-12">
                               {FAQs.map((FAQ) => (
                                     <div key={FAQ.name} className="flex items-start h-auto gap-4 py-6 pl-6 pr-12 bg-white shadow-lg rounded-xl">
