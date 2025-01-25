@@ -9,7 +9,7 @@
 
 .home-style{
       font-family: "Poppins", serif;
-      background-image: url(src/assets/Semi_Circle.svg);
+      background-image: url(../src/assets/Semi_Circle.svg);
       background-repeat: no-repeat;
       background-position: right 3000px;
 }
@@ -17,7 +17,7 @@
       text-shadow: 0rem 0.1rem black;
 }
 .partner-style{
-      background-image: url(src/assets/Semi_Circle_Green.svg);
+      background-image: url(../src/assets/Semi_Circle_Green.svg);
       background-repeat: no-repeat;
       background-position: left 1000px;
 }
