@@ -8,10 +8,10 @@
 }
 
 .home-style{
-      font-family: "Poppins", serif;
+      font-family: "Poppins", san-serif;
       background-image: url(src/assets/Semi_Circle.svg);
       background-repeat: no-repeat;
-      background-position: right 3000px;
+      background-position: right 390vh;
 }
 .shadow-text{
       text-shadow: 0rem 0.1rem black;
@@ -19,11 +19,12 @@
 .partner-style{
       background-image: url(src/assets/Semi_Circle_Green.svg);
       background-repeat: no-repeat;
-      background-position: left 1000px;
+      background-position: left calc(100vh + 20rem + -100px);
 }
 .hero-style{
       background-image: url(../src/assets/Demi_circle.svg);
       background-repeat: no-repeat;
       background-position: right top;
+      background-size: calc(6.25vw + 10rem);
       background-color: var(--Green);
 }

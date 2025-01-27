@@ -3,19 +3,19 @@ import Logo from "../assets/Logo_icon.svg"
 export default function Navbar() {
       return (
             <>
-                  <nav className="z-10 flex items-center py-8 justify-evenly max-w-screen">
-                        <div>
-                              <dl className="hidden gap-8 text-[1rem] font-semibold text-white md:flex w-64">
+                  <nav className="z-10 flex items-center justify-around px-2 py-8 max-w-screen">
+                        <div className="hidden md:flex">
+                              <dl className=" gap-8 text-[1rem] font-semibold text-white w-72 flex">
                                     <a className="cursor-pointer hover:opacity-80">Blog</a>
                                     <a className="cursor-pointer hover:opacity-80">About Us</a>
                                     <a className="cursor-pointer hover:opacity-80">Support</a>
                               </dl>
                         </div>
                         <div>
-                              <img src={Logo} alt="Pay4Me Logo" className="w-48 lg:w-64"/>
+                              <img src={Logo} alt="Pay4Me Logo" className="w-36 md:w-48 xl:w-80 sm:w-40 xl:-ml-24"/>
                         </div>
                         <div>
-                              <button className="p-3 bg-white text-[1rem] rounded-md shadow-sm shadow-gray-500 text-[#0A5D2A] font-semibold h-auto w-36 hover:scale-95">Download App</button>
+                              <button className="py-4 px-5 bg-white text-sm lg:text-[1rem]  rounded-md shadow-sm shadow-gray-500 text-[#0A5D2A] font-semibold h-auto hover:scale-[85%] lg:hover:scale-95 lg:scale-100 scale-90">Download App</button>
                         </div>
                   </nav>
             </>

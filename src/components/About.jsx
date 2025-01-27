@@ -23,25 +23,25 @@ const aboutUs = [
 export default function AboutSection() {
       return (
             <>
-                  <section className="relative flex flex-col items-center justify-center w-full gap-8 mt-96 sm:mt-64 md:mt-96 xl:mt-96">
-                        <div className="flex lg:mb-12 lg:mt-28">
+                  <section className="relative flex flex-col items-center justify-center w-full gap-8">
+                        <div className="flex -mt-12 lg:mt-20 lg:mb-12">
                               <img src={AppStoreIcon}  className="w-48 h-auto -mx-2 cursor-pointer sm:w-56 md:w-64 md:-mx-0 sm:scale-100 hover:scale-95"/>
                               <img src={PlayStoreIcon} className="w-48 h-auto -mx-2 cursor-pointer sm:w-56 md:w-64 sm:scale-100 md:-mx-0 hover:scale-95"/>
                         </div>
                         <div>
                               <h1 className="text-5xl font-bold md:text-7xl">About Us</h1>
                         </div>
-                        <div className="flex flex-col items-center mx-8 mt-8">
+                        <div className="flex flex-col items-center mx-8 mt-8 lg:gap-24">
                               {aboutUs.map((AboutItem) => (
-                                    <div key={AboutItem.name} className="flex items-center md:w-4/ lg:w-11/12 5 xl:w-5/6 gap-40 even:flex-row-reverse justify-evenly h-max md:h-[40rem] lg:h-[45rem] xl:min-h-[50rem] my-4">
+                                    <div key={AboutItem.name} className="flex items-center md:w-4/ lg:w-11/12 5 xl:w-5/6 gap-40 even:flex-row-reverse justify-evenly h-max md:h-[40rem] lg:h-[45rem] xl:min-h-[50rem] my-4 bg-[#F8FFF9] md:bg-transparent p-1 rounded-lg border-[.01175rem] md:border-none">
                                           <div className="bg-[var(--Green)] w-max md:w-3/5 h-[12rem] md:h-[22.5rem]  mt-auto rounded-xl hidden md:flex justify-center">
                                                 <img src={PhoneImage} className=" mx-auto h-auto scale-110 md:w-[17.5rem] xl:w-[25rem] md:-mt-[12.5rem] lg:-mt-[15rem] xl:-mt-[25rem] absolute"/>
                                           </div>
                                           <div className="flex flex-col items-start justify-between gap-6 px-4 md:w-3/5">
                                                 <h3 className="text-2xl md:text-4xl font-semibold tracking-wide lg:leading-[3.75rem] px-2">{AboutItem.header}</h3>
-                                                <p className="text-lg tracking-wider md:text-xl lg:text-lg lg:w-3/4">{AboutItem.description}</p>
-                                                <div className="">
-                                                      <button className="bg-[var(--Green)] border-[var(--Green)] hover:bg-white hover:text-[var(--Green)] text-white flex py-4 px-6 font-semibold border rounded-md">Learn More</button>
+                                                <p className="text-sm tracking-wider md:text-xl lg:w-3/4">{AboutItem.description}</p>
+                                                <div className="-ml-4 sm:ml-0">
+                                                      <button className="bg-[var(--Green)] border-[var(--Green)] hover:bg-white hover:text-[var(--Green)] text-white flex py-4 px-6 font-semibold border rounded-md scale-75 lg:scale-100">Learn More</button>
                                                 </div>     
                                           </div>
                                     </div>

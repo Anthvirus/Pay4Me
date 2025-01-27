@@ -96,7 +96,7 @@ export default function PartnerSection() {
       ]
       return (
             <>
-                  <section className="flex flex-col items-center justify-center gap-16 mt-24 md:mt-48 partner-style">
+                  <section className="flex flex-col items-center justify-center gap-16 -mt-48 md:-mt-24 partner-style">
                         <div className="flex flex-col items-center">
                         <h1 className="text-4xl font-bold md:text-7xl">Trusted Partners</h1>
                         <div className="flex flex-wrap justify-center gap-6 mx-auto my-12">
@@ -107,11 +107,11 @@ export default function PartnerSection() {
                         </div>
                         <div className="flex flex-col items-center">
                               <h1 className="text-5xl font-bold md:text-7xl">Testmonials</h1>
-                              <p className="w-11/12 my-8 text-xl text-center lg:w-1/4">What Our Users Are Saying About Seamless Payments</p>
+                              <p className="w-11/12 my-8 text-center md:text-xl lg:w-1/4">What Our Users Are Saying About Seamless Payments</p>
                               <div className="grid w-11/12 grid-cols-1 gap-4 md:grid-cols-2 lg:w-3/4">
                                     {Testmonies.map((Testmony) => (
                                           <div key={Testmony.name} className="bg-white min-w-[20rem] tracking-wider border-2 hover:border-none px-12 py-16 rounded-xl gap-4 flex flex-col hover:bg-[#F8FFF9]">
-                                                <p className="text-xl">{Testmony.description}</p>
+                                                <p className="md:text-xl">{Testmony.description}</p>
                                                 <div className="flex items-center gap-4">
                                                       <img src={Testmony.image} alt="" className="" />
                                                       <div>
@@ -130,7 +130,7 @@ export default function PartnerSection() {
                               {FAQs.map((FAQ) => (
                                     <div key={FAQ.name} className="flex items-start h-auto gap-4 py-6 pl-6 pr-12 bg-white shadow-lg rounded-xl">
                                           <img src={(faqOpen) ? AddIcon : RemoveIcon}  className="static p-1 cursor-pointer size-6" onClick={(...prevValue)=>(toggleFaq(!faqOpen))}/>
-                                          <p className="text-md md:text-xl">{FAQ.text}</p>
+                                          <p className="text-sm md:text-xl">{FAQ.text}</p>
                                     </div>    
                               ))}
                               </div>
