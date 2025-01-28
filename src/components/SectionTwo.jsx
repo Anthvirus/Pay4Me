@@ -76,7 +76,7 @@ export default function SectionTwo() {
                                                       <img src={Testmony.image} alt="" className="" />
                                                       <div>
                                                             <h1 className="text-xl font-bold">{Testmony.name}</h1>
-                                                            <p className="text-sm">{Testmony.occupation}</p>
+                                                            <p className="text-[0.625rem] md:text-sm">{Testmony.occupation}</p>
                                                       </div>
                                                 </div>
                                           </div>
