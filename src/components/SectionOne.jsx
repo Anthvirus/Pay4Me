@@ -81,7 +81,7 @@ export default function SectionOne() {
                                     </div>
                               ))}
                         </div>
-                        <div className="flex flex-col items-center mt-36">
+                        <div className="flex flex-col items-center lg:mt-36">
                         <h1 className="text-4xl font-extrabold md:text-7xl shadow-text">Trusted Partners</h1>
                         <div className="flex flex-wrap justify-center gap-6 mx-auto my-12">
                               {Partners.map((partners)=>(
