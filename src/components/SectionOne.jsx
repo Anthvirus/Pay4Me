@@ -72,7 +72,7 @@ export default function SectionOne() {
                                                 <img src={PhoneImage} className=" mx-auto h-auto scale-110 md:w-[17.5rem] xl:w-[25rem] md:-mt-[12.5rem] lg:-mt-[15rem] xl:-mt-[25rem] absolute"/>
                                           </div>
                                           <div className="flex flex-col items-start justify-between gap-6 px-4 md:w-3/5">
-                                                <h3 className="text-2xl md:text-4xl font-semibold tracking-wide lg:leading-[3.75rem] px-2">{AboutItem.header}</h3>
+                                                <h3 className="text-xl md:text-4xl font-semibold tracking-wide lg:leading-[3.75rem] px-2">{AboutItem.header}</h3>
                                                 <p className="text-sm tracking-wider md:text-xl lg:w-3/4">{AboutItem.description}</p>
                                                 <div className="-ml-4 sm:ml-0">
                                                       <button className="bg-[var(--Green)] border-[var(--Green)] hover:bg-white hover:text-[var(--Green)] text-white flex py-4 px-6 font-semibold border rounded-md scale-75 lg:scale-100">Learn More</button>
