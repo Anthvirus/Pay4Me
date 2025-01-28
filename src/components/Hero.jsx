@@ -7,7 +7,7 @@ export default function HeroSection() {
             <>
                   <header className="relative flex flex-col gap-4 max-w-screen hero-style justify-evenly">
                         <Navbar />
-                              <div className="absolute w-5 h-5 justify-center rounded-full bg-white -mt-[48rem] right-[20rem]">
+                              <div className="absolute w-5 h-5 justify-center rounded-full bg-white -mt-[48rem] right-[20rem] hidden xl:flex">
                                     <img src={Dot } className="relative m-auto scale-110 size-8" />
                               </div>
                              <div className="absolute xl:flex w-5 h-5 justify-center rounded-full hidden bg-white right-[34.5rem] -mt-20">
