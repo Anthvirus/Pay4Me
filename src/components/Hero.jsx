@@ -17,7 +17,7 @@ export default function HeroSection() {
                                     <img src={Dot } className="relative m-auto scale-110 size-8" />
                               </div>
                         <div className="z-10 flex flex-col items-center gap-8 mt-2 text-center lg:mb-10">
-                              <h1 className="text-3xl sm:text-4xl w-11/12 lg:w-3/4 xl:w-3/5 md:text-[4.5rem] font-semibold text-white tracking-wide md:leading-[6.25rem] shadow-text">International Payments for Students.</h1>
+                              <h1 className="text-4xl sm:text-4xl w-11/12 lg:w-3/4 xl:w-3/5 md:text-[4.5rem] font-semibold text-white tracking-wide md:leading-[6.25rem] shadow-text">International Payments for Students.</h1>
                               <div className="w-5/6 lg:w-3/5 xl:w-1/2 mx-auto text-sm md:text-2xl font-semibold tracking-normal leading-[2rem] text-white">
                                     <p>The fastest, simplest way to pay tuition, fees, and more — anytime, anywhere, to schools, businesses, and government agencies worldwide!</p>
                               </div>
