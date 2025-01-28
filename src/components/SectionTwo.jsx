@@ -71,7 +71,7 @@ export default function SectionTwo() {
                               <div className="grid w-11/12 grid-cols-1 gap-4 md:grid-cols-2 lg:w-3/4">
                                     {Testmonies.map((Testmony) => (
                                           <div key={Testmony.name} className="bg-white min-w-[20rem] tracking-wider border-2 hover:border-none p-8 md:px-12 md:py-16 rounded-xl gap-4 flex flex-col hover:bg-[#F8FFF9] shadow-xl">
-                                                <p className="md:text-xl">{Testmony.description}</p>
+                                                <p className="text-sm md:text-xl">{Testmony.description}</p>
                                                 <div className="flex items-center gap-4">
                                                       <img src={Testmony.image} alt="" className="" />
                                                       <div>
