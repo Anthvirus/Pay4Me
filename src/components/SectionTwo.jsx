@@ -1,10 +1,4 @@
 import { useState } from "react";
-import Paystack from "../assets/Paystack.svg";
-import Stripe from "../assets/Stripe.svg";
-import MPower from "../assets/Mpower.svg";
-import Techstars from "../assets/Techstars.svg";
-import Prodigy from "../assets/Prodigy.svg";
-import Across from "../assets/Across.svg";
 import AishaImage from "../assets/Aisha.svg";
 import AdewoleImage from "../assets/Adewole.svg";
 import GraceImage from "../assets/Grace.svg";
@@ -12,35 +6,9 @@ import KofiImage from "../assets/Kofi.svg";
 import AddIcon from "../assets/Add_Icon.svg";
 import RemoveIcon from "../assets/Remove_Icon.svg"; 
 
-export default function PartnerSection() {
-      const[faqOpen, toggleFaq] = useState(false)
+export default function SectionTwo() {
+      const [faqOpen, toggleFaq] = useState(false)
       
-      const Partners = [
-            {
-                  name: 'Paystack',
-                  image: Paystack
-            },
-            {
-                  name: 'Stripe',
-                  image: Stripe
-            },
-            {
-                  name: 'Prodigy',
-                  image: Prodigy
-            },
-            {
-                  name: 'Mpower',
-                  image: MPower
-            },
-            {
-                  name: 'Across',
-                  image: Across
-            },
-            {
-                  name: 'Techstars',
-                  image: Techstars
-            },
-      ]
       const Testmonies = [
             {
                   name: "Aisha",
@@ -96,21 +64,13 @@ export default function PartnerSection() {
       ]
       return (
             <>
-                  <section className="flex flex-col items-center justify-center gap-16 -mt-48 md:-mt-24 partner-style">
+                  <section className="flex flex-col items-center justify-center gap-20 -mt-48 md:-mt-48 Part-two">
                         <div className="flex flex-col items-center">
-                        <h1 className="text-4xl font-bold md:text-7xl">Trusted Partners</h1>
-                        <div className="flex flex-wrap justify-center gap-6 mx-auto my-12">
-                              {Partners.map((partners)=>(
-                              <img className="h-auto w-28 md:w-56" alt="" src={partners.image} key={partners.name}/>
-                              ))}
-                        </div>
-                        </div>
-                        <div className="flex flex-col items-center">
-                              <h1 className="text-5xl font-bold md:text-7xl">Testmonials</h1>
+                              <h1 className="text-5xl font-extrabold md:text-7xl shadow-text">Testmonials</h1>
                               <p className="w-11/12 my-8 text-center md:text-xl lg:w-1/4">What Our Users Are Saying About Seamless Payments</p>
                               <div className="grid w-11/12 grid-cols-1 gap-4 md:grid-cols-2 lg:w-3/4">
                                     {Testmonies.map((Testmony) => (
-                                          <div key={Testmony.name} className="bg-white min-w-[20rem] tracking-wider border-2 hover:border-none px-12 py-16 rounded-xl gap-4 flex flex-col hover:bg-[#F8FFF9]">
+                                          <div key={Testmony.name} className="bg-white min-w-[20rem] tracking-wider border-2 hover:border-none p-8 md:px-12 md:py-16 rounded-xl gap-4 flex flex-col hover:bg-[#F8FFF9] shadow-xl">
                                                 <p className="md:text-xl">{Testmony.description}</p>
                                                 <div className="flex items-center gap-4">
                                                       <img src={Testmony.image} alt="" className="" />
@@ -125,11 +85,11 @@ export default function PartnerSection() {
                               </div>
                         </div>
                         <div className="flex flex-col items-center w-11/12 gap-12 mt-24 md:w-2/3 lg:w-1/2">
-                              <h1 className="text-4xl font-bold md:text-7xl">FAQ&rsquo;s</h1>
+                              <h1 className="text-4xl font-extrabold md:text-7xl shadow-text">FAQ&rsquo;s</h1>
                               <div className="grid grid-cols-1 gap-12">
                               {FAQs.map((FAQ) => (
                                     <div key={FAQ.name} className="flex items-start h-auto gap-4 py-6 pl-6 pr-12 bg-white shadow-lg rounded-xl">
-                                          <img src={(faqOpen) ? AddIcon : RemoveIcon}  className="static p-1 cursor-pointer size-6" onClick={(...prevValue)=>(toggleFaq(!faqOpen))}/>
+                                          <img src={(faqOpen) ? AddIcon : RemoveIcon}  className="static p-1 cursor-pointer size-6" onClick={()=>(toggleFaq(!faqOpen))}/>
                                           <p className="text-sm md:text-xl">{FAQ.text}</p>
                                     </div>    
                               ))}

@@ -1,14 +1,14 @@
 import HeroSection from "./Hero"; 
-import AboutSection from "./About";
-import PartnerSection from "./Partner";
+import SectionOne from "./SectionOne"; 
+import SectionTwo from "./SectionTwo";
 
 export default function HomePage() {
       return (
             <>
-                  <section className="flex flex-col gap-80 max-w-screen home-style">
+                  <section className="flex flex-col gap-72 max-w-screen home-style">
                         <HeroSection />
-                        <AboutSection />
-                        <PartnerSection />
+                        <SectionOne />
+                        <SectionTwo />
                   </section>
             </>
       )

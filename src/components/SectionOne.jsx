@@ -1,7 +1,41 @@
 import PlayStoreIcon from "../assets/Play_Store.svg";
 import AppStoreIcon from "../assets/App_Store.svg";
 import PhoneImage from "../assets/Phone.svg";
+import Paystack from "../assets/Paystack.svg";
+import Stripe from "../assets/Stripe.svg";
+import MPower from "../assets/Mpower.svg";
+import Techstars from "../assets/Techstars.svg";
+import Prodigy from "../assets/Prodigy.svg";
+import Across from "../assets/Across.svg";
 
+
+      const Partners = [
+            {
+                  name: 'Paystack',
+                  image: Paystack
+            },
+            {
+                  name: 'Stripe',
+                  image: Stripe
+            },
+            {
+                  name: 'Prodigy',
+                  image: Prodigy
+            },
+            {
+                  name: 'Mpower',
+                  image: MPower
+            },
+            {
+                  name: 'Across',
+                  image: Across
+            },
+            {
+                  name: 'Techstars',
+                  image: Techstars
+            },
+]
+      
 const aboutUs = [
       {
             name: "Fast",
@@ -20,16 +54,16 @@ const aboutUs = [
       }
 ]
 
-export default function AboutSection() {
+export default function SectionOne() {
       return (
             <>
-                  <section className="relative flex flex-col items-center justify-center w-full gap-8">
-                        <div className="flex -mt-12 lg:mt-20 lg:mb-12">
+                  <section className="relative flex flex-col items-center justify-center w-full gap-8 Part-one">
+                        <div className="flex lg:mt-20 lg:mb-6">
                               <img src={AppStoreIcon}  className="w-48 h-auto -mx-2 cursor-pointer sm:w-56 md:w-64 md:-mx-0 sm:scale-100 hover:scale-95"/>
                               <img src={PlayStoreIcon} className="w-48 h-auto -mx-2 cursor-pointer sm:w-56 md:w-64 sm:scale-100 md:-mx-0 hover:scale-95"/>
                         </div>
                         <div>
-                              <h1 className="text-5xl font-bold md:text-7xl">About Us</h1>
+                              <h1 className="text-5xl font-extrabold md:text-7xl shadow-text">About Us</h1>
                         </div>
                         <div className="flex flex-col items-center mx-8 mt-8 lg:gap-24">
                               {aboutUs.map((AboutItem) => (
@@ -46,6 +80,14 @@ export default function AboutSection() {
                                           </div>
                                     </div>
                               ))}
+                        </div>
+                        <div className="flex flex-col items-center mt-36">
+                        <h1 className="text-4xl font-extrabold md:text-7xl shadow-text">Trusted Partners</h1>
+                        <div className="flex flex-wrap justify-center gap-6 mx-auto my-12">
+                              {Partners.map((partners)=>(
+                              <img className="h-auto w-28 md:w-56" alt="" src={partners.image} key={partners.name}/>
+                              ))}
+                        </div>
                         </div>
                   </section>
             </>

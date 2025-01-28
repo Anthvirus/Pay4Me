@@ -8,20 +8,22 @@
 }
 
 .home-style{
-      font-family: "Poppins", san-serif;
-      background-image: url(src/assets/Semi_Circle.svg);
       font-family: "Poppins", serif;
+}
+.Part-one{
       background-image: url(../src/assets/Semi_Circle.svg);
       background-repeat: no-repeat;
-      background-position: right 390vh;
+      background-position: right bottom 10vh;
+      background-size: calc(6.25vw + 10rem);
 }
 .shadow-text{
-      text-shadow: 0rem 0.1rem black;
+      text-shadow: 0rem 0.15rem 3px grey;
 }
-.partner-style{
+.Part-two{
       background-image: url(../src/assets/Semi_Circle_Green.svg);
       background-repeat: no-repeat;
-      background-position: left calc(100vh + 20rem + -100px);
+      background-size: calc(6.25vw + 10rem);
+      background-position: left bottom 30vh;
 }
 .hero-style{
       background-image: url(../src/assets/Demi_circle.svg);
@@ -29,4 +31,5 @@
       background-position: right top;
       background-size: calc(6.25vw + 10rem);
       background-color: var(--Green);
+      height: calc(70vh + 20rem);
 }
