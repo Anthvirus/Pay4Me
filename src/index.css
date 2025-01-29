@@ -9,6 +9,9 @@
 
 .home-style{
       font-family: "Poppins", serif;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
 }
 .Part-one{
       background-image: url(../src/assets/Semi_Circle.svg);

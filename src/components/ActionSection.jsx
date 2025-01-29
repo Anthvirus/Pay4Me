@@ -12,8 +12,8 @@ export default function CTASection() {
                                                             <h1 className="text-4xl font-bold lg:text-6xl lg:w-1/2">Download App</h1>
                                                             <p className="w-11/12 text-sm md:text-xl lg:w-3/4">Experience a seamless way to handle your payments. From tuition fees to visa applications, we make every transaction quick, easy, and stress-free—so you can focus on what matters most.</p>
                                                             <div className="flex mx-auto md:-ml-5">
-                                                                      <img src={AppStoreIcon} className="w-48 h-auto -mx-2 cursor-pointer sm:w-56 md:w-64 md:-mx-0 sm:scale-100 hover:scale-95" alt=""/>
-                                                                      <img src={PlayStoreIcon} className="w-48 h-auto -mx-2 cursor-pointer sm:w-56 md:w-64 md:-mx-0 sm:scale-100 hover:scale-95" alt=""/>
+                                                                      <img src={AppStoreIcon} className="w-40 h-auto -mx-2 cursor-pointer sm:w-56 md:w-64 md:-mx-0 sm:scale-100 hover:scale-95" alt=""/>
+                                                                      <img src={PlayStoreIcon} className="w-40 h-auto -mx-2 cursor-pointer sm:w-56 md:w-64 md:-mx-0 sm:scale-100 hover:scale-95" alt=""/>
                                                             </div>
                                                   </div>
                                                   <img src ={PhoneImage} className="scale-[70%] lg:scale-100 h-auto rounded-[4.5rem]" alt=""/>

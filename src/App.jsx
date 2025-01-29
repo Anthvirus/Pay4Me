@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <section>
-          <HomePage/>
+      <HomePage/>
       </section>
     </>
   )
