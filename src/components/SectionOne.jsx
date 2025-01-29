@@ -57,13 +57,13 @@ const aboutUs = [
 export default function SectionOne() {
       return (
             <>
-                  <section className="relative flex flex-col items-center justify-center w-full gap-8 Part-one">
-                        <div className="flex lg:mt-20 lg:mb-6">
-                              <img src={AppStoreIcon}  className="w-48 h-auto -mx-2 cursor-pointer sm:w-56 md:w-64 md:-mx-0 sm:scale-100 hover:scale-95"/>
-                              <img src={PlayStoreIcon} className="w-48 h-auto -mx-2 cursor-pointer sm:w-56 md:w-64 sm:scale-100 md:-mx-0 hover:scale-95"/>
+                  <section className="relative flex flex-col items-center justify-center w-full gap-20 Part-one">
+                        <div className="flex md:mt-20 lg:mb-6">
+                              <img src={AppStoreIcon}  className="w-40 h-auto -mx-2 cursor-pointer sm:w-56 md:w-64 md:-mx-0 sm:scale-100 hover:scale-95"/>
+                              <img src={PlayStoreIcon} className="w-40 h-auto -mx-2 cursor-pointer sm:w-56 md:w-64 sm:scale-100 md:-mx-0 hover:scale-95"/>
                         </div>
                         <div>
-                              <h1 className="text-5xl font-extrabold md:text-7xl shadow-text">About Us</h1>
+                              <h1 className="text-5xl font-semibold md:text-7xl shadow-text">About Us</h1>
                         </div>
                         <div className="flex flex-col items-center mx-8 mt-8 lg:gap-24">
                               {aboutUs.map((AboutItem) => (
@@ -73,8 +73,8 @@ export default function SectionOne() {
                                           </div>
                                           <div className="flex flex-col items-start justify-between gap-6 px-4 md:w-3/5">
                                                 <h3 className="text-xl md:text-4xl font-semibold tracking-wide lg:leading-[3.75rem] px-2">{AboutItem.header}</h3>
-                                                <p className="text-sm tracking-wider md:text-xl lg:w-3/4">{AboutItem.description}</p>
-                                                <div className="-ml-4 sm:ml-0">
+                                                <p className="text-sm md:text-xl lg:w-3/4">{AboutItem.description}</p>
+                                                <div className="-ml-4 lg:ml-0">
                                                       <button className="bg-[var(--Green)] border-[var(--Green)] hover:bg-white hover:text-[var(--Green)] text-white flex py-4 px-6 font-semibold border rounded-md scale-75 lg:scale-100">Learn More</button>
                                                 </div>     
                                           </div>
@@ -82,7 +82,7 @@ export default function SectionOne() {
                               ))}
                         </div>
                         <div className="flex flex-col items-center lg:mt-36">
-                        <h1 className="text-4xl font-extrabold md:text-7xl shadow-text">Trusted Partners</h1>
+                        <h1 className="text-4xl font-semibold md:text-7xl shadow-text">Trusted Partners</h1>
                         <div className="flex flex-wrap justify-center gap-6 mx-auto my-12">
                               {Partners.map((partners)=>(
                               <img className="h-auto w-28 md:w-56" alt="" src={partners.image} key={partners.name}/>

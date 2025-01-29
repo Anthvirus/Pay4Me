@@ -23,7 +23,7 @@
       background-image: url(../src/assets/Semi_Circle_Green.svg);
       background-repeat: no-repeat;
       background-size: calc(6.25vw + 10rem);
-      background-position: left bottom 30vh;
+      background-position: left top 90vh;
 }
 .hero-style{
       background-image: url(../src/assets/Demi_circle.svg);
@@ -31,5 +31,12 @@
       background-position: right top;
       background-size: calc(6.25vw + 10rem);
       background-color: var(--Green);
-      height: calc(70vh + 20rem);
+      height: calc(10vh + 60rem);
+}
+.newsletter{
+      background-color: var(--Green);
+      background-image: url(../src/assets/Newsletter-semicircle.svg);
+      background-size: calc(6.25vw + 12.5rem);
+      background-position: calc(-20rem + 300px + 50vw) bottom;
+      background-repeat: no-repeat;
 }
